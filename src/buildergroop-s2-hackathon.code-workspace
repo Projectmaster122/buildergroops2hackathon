@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "buildergroop-s2-hackathon",
+			"path": ".."
+		},
+		{
+			"name": "ace",
+			"path": "../../../../Downloads/ace"
+		}
+	],
+	"settings": {}
+}

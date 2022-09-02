@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import AceEditor from 'react-ace'
 
 import 'ace-builds/src-noconflict/mode-javascript'
@@ -7,22 +6,23 @@ import 'ace-builds/src-noconflict/ext-language_tools'
 import 'ace-builds/src-noconflict/ext-beautify'
 import './App.css';
 
-const element = <div className='navbar'></div>;
 function App() {
     
     return (
-      element,
         <AceEditor
             style={{
-                height: '95vh',
-                width: '95vw',
-                left: '5vw',
-                top: '5vh'
+              position: 'absolute',
+                height: '93vh',
+                width: '89vw',
+                left: '10.5vw',
+                top: '5vh',
+                border: "1px solid white",
+                borderRadius: ".5%"
             }}
             placeholder = 'Start Coding...'
             mode='javascript'
             theme='dracula'
-            name='basic-code-editor'
+            name='editor'
             fontSize = { 24 }
             showPrintMargin={true}
             showGutter={true}
@@ -36,6 +36,7 @@ function App() {
             }}
         />
     )
+    
 }
 
 export default App;
