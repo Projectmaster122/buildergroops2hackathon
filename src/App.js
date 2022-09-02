@@ -5,7 +5,12 @@ import 'ace-builds/src-noconflict/theme-dracula'
 import 'ace-builds/src-noconflict/ext-language_tools'
 import 'ace-builds/src-noconflict/ext-beautify'
 import './App.css';
+import { createRoot } from "react-dom/client";
+import { hop } from "@onehop/client";
 
+hop.init({
+	projectId: "project_NDk4NzkzMTA1MjU3NzYwMzI"
+});
 function App() {
     
     return (
@@ -38,5 +43,8 @@ function App() {
     )
     
 }
+
+createRoot(document.getElementById("root")).render(<App />);
+
 
 export default App;
