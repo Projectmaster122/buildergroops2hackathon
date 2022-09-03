@@ -107,6 +107,7 @@ h1
 body
 {
   background-color: #282c34;
+
   overflow: hidden; 
 }
 
@@ -188,6 +189,7 @@ div h1:hover
 }
 
 .dropbtn {
+  
   background-color: white;
   color: black;
   padding: 16px;
