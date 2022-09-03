@@ -40,8 +40,6 @@ h1
 
 .logo-text p 
 {
-  position: absolute;
-  bottom: 1vh;
   font-size: 1vw;
   color: white;
 }
@@ -49,22 +47,24 @@ h1
   display: flex; 
   flex-direction: column; 
   align-items: center;
+  position: absolute;
+  bottom: 35vh;
 }
 .sideBar {
   text-decoration: none;
   height: 100%;
   width: 10vw;
-  font-size: 2vh;
+  font-size: 2.7vh;
 
   position: fixed;
   z-index: 99; 
   background-color:#232323; 
   transition: 1s ease; 
-  padding-top: 20px; 
+  padding-top: 35vh; 
   display: flex; 
   flex-direction: column; 
   align-items: center;
-  border-right: 5px solid gray;
+  border-right: 1px solid gray;
   transition-duration: 0.5s;
 }
 
@@ -80,13 +80,24 @@ h1
   transition-duration: 0.5s;
   color: green;
   height: 75px;
-  font-size: 2.25vh;
+  font-size: 2.85vh;
 }
 .sideBar #settings-sidebar-icon
 {
   transition: transform .7s ease-in;
+  position: relative;
+  top: 0.3vh;
 }
-
+.sideBar #nitro-sidebar-icon
+{
+  position: relative;
+  top: 0.3vh;
+}
+.sideBar #home-sidebar-icon
+{
+  position: relative;
+  top: 0.3vh;
+}
 .sideBar #settings-sidebar-icon:hover
 {
   color:green;
@@ -128,7 +139,7 @@ body
   border: 1px solid green;
   background-color: black;
   text-align: center;
-  opacity: .5;
+  opacity: .65;
   transition-duration: 0.5s;
   border-radius: 5%;
 }
@@ -154,7 +165,7 @@ div h1:hover
 }
 #Homepage h1
 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   position: relative;
   right: 15vw;
 }
@@ -174,4 +185,141 @@ div h1:hover
   transition-duration: 0.5s;
   font-size: 2.5vw;
   color: rgb(105, 201, 116);
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 15vw;
+  border-radius: 10vw;
+  transition-duration: 0.5s;
+}
+#arrow
+{
+  color: white;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: green;
+  width: 16vw;
+  transition-duration: 0.5s;
+}
+
+.dropdown {
+  position: relative;
+  left: 20vw;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  transition-duration: 0.5s;
+  background-color: #f1f1f1;
+  width:  13vw;
+  min-width:  5vw;
+  left: 1vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5%;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: green;
+  transition-duration: 0.5s;
+  font-size: 1vw;
+}
+
+.show {display:block;}
+
+/* Change theme */
+
+.dropbtn-theme {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 15vw;
+  border-radius: 10vw;
+  transition-duration: 0.5s;
+}
+
+
+.dropbtn-theme:hover, .dropbtn-theme:focus {
+  background-color: green;
+  width: 16vw;
+  transition-duration: 0.5s;
+}
+
+.dropdown-theme {
+  position: relative;
+  right: 20vw;
+  display: inline-block;
+}
+
+.dropdown-content-theme {
+  display: none;
+  position: relative;
+  transition-duration: 0.5s;
+  background-color: #f1f1f1;
+  width:  13vw;
+  min-width:  5vw;
+  left: 1vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5%;
+  
+}
+
+.dropdown-content-theme a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-theme a:hover {
+  background-color: #ddd;
+  color: green;
+  transition-duration: 0.5s;
+  font-size: 1vw;
+}
+
+.show {display:block;}
+
+
+#reload
+{
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 15vw;
+  border-radius: 10vw;
+  transition-duration: 0.5s;
+  position: relative;
+  top: 44vh;
+}
+
+#reload:hover, #reload:focus {
+  background-color: green;
+  width: 16vw;
+  transition-duration: 0.5s;
 }

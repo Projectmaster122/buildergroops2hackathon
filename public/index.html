@@ -36,7 +36,7 @@
     
     <div id="Homepage" style="visibility: hidden; width: 0; height: 0;">
       <h1>
-        Welcome to Nitro Code Editor.
+        Welcome to the Nitro Code Editor.
       </h1>
       <div id="aboutUs">
           <p>
@@ -60,54 +60,76 @@
       <img src="./logo.png" id="logo" alt = ''/>
       <p>Nitro editor 2022</p>
     </div>
-      <a href='/home'>
+      <a href='/home' id="home-sidebar">
           Home
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined" id="home-sidebar-icon">
           home
           </span>
       </a>
-      <a href='/settings'>
-          Settings 
-          <span class="material-symbols-outlined"id="settings-sidebar-icon">
-          settings
-          </span>
-      </a>
-      <a href='/nitro'>
+
+      <a href='/nitro' id="nitro-sidebar">
         Nitro
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined" id="nitro-sidebar-icon">
         terminal
         </span>
     </a>
-      
+    <a href='/settings' id="settings-sidebar">
+      Settings 
+      <span class="material-symbols-outlined" id="settings-sidebar-icon">
+      settings
+      </span>
+    </a>
   </div>
+
   <button id="save"onClick="saveCurrentFile()">
     Save as
   </button>
 
   <div id="settings" style="visibility: hidden;">
+    <button id="reload" onclick="window.location.reload();">Save changes</button>
     <h1>Settings.</h1>
-    <button class="dropbtn" id="dropbtn">Dropdown</button>
+
+    <script>
+    function dropDownLanguages() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function dropDownThemes() {
+      document.getElementById("myDropdown-theme").classList.toggle("show");
+    }
+    </script>
 
     <div class="dropdown">
+      <button onclick="dropDownLanguages()" class="dropbtn">Change Language</button>
       <div id="myDropdown" class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="#Mode-HTML">Html</a>
+        <a href="#Mode-CSS">Css</a>
+        <a href="#Mode-JS">JavaScript</a>
+        <a href="#Mode-CPP">C++</a>
+        <a href="#Mode-C">C</a>
+        <a href="#Mode-C#">C#</a>
+        <a href="#Mode-JAVA">Java</a>
+        <a href="#Mode-PYTHON">Python</a>
+        <a href="#Mode-TXT">Text</a>
       </div>
     </div>
 
+  
+  <div class="dropdown-theme">
+    <button onclick="dropDownThemes()" class="dropbtn-theme">Change Theme</button>
+    <div id="myDropdown-theme" class="dropdown-content-theme">
+      <a href="#Theme-Chaos">Chaos (Dark)</a>
+      <a href="#Theme-Terminal">Terminal (Dark)</a>
+      <a href="#Theme-Dracula">Dracula (Dark)</a>
+      <a href="#">C++</a>
+      <a href="#">C</a>
+      <a href="#">C#</a>
+      <a href="#">Java</a>
+      <a href="#">Python</a>
+      <a href="#">Text</a>
+    </div>
   </div>
+</div>
 
-
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</div>
+</body>
 </html>
