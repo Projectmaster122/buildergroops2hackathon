@@ -34,9 +34,24 @@
 
     </div>
     
+    <div id="Homepage" style="visibility: hidden; width: 0; height: 0;">
+      <h1>
+        Welcome to Nitro Code Editor.
+      </h1>
+      <div id="aboutUs">
+          <p>
+            Hello and welcome to the Nitro Code Editor. </br>
+            Developed by Void and Fakie for the Builder Groop S2 Hackathon.
+            This website uses the <a href="https://reactjs.org" style="color:white;">React.js</a> framework, <a href="https://ace.c9.io" style="color:white;">React-Ace</a> for the code
+            Editing, and <a href="https://www.npmjs.com/package/file-saver" style="color:white;">FileSaver.js</a> for saving your code.
+          </p>
+      </div>
+    </div>
+
+
     <div id="topbar">
       <div id="text-logo">
-        <h1>Nitro editor</h1>
+        <h1 id="header1">Nitro editor</h1>
       </div>
     </div>
 
@@ -53,12 +68,37 @@
       </a>
       <a href='/settings'>
           Settings 
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined"id="settings-sidebar-icon">
           settings
           </span>
       </a>
+      <a href='/nitro'>
+        Nitro
+        <span class="material-symbols-outlined">
+        terminal
+        </span>
+    </a>
       
   </div>
+  <button id="save"onClick="saveCurrentFile()">
+    Save as
+  </button>
+
+  <div id="settings" style="visibility: hidden;">
+    <h1>Settings.</h1>
+    <button class="dropbtn" id="dropbtn">Dropdown</button>
+
+    <div class="dropdown">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+  </div>
+
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
