@@ -21,13 +21,6 @@ body{
   width: 15vw;
   height: 5vh;
 }
-
-.navbar
-{
-  width: 10vw;
-  height: 100vh;
-  border-color: green;
-}
 h1
 {
   position: relative;
@@ -72,15 +65,113 @@ h1
   flex-direction: column; 
   align-items: center;
   border-right: 5px solid gray;
+  transition-duration: 0.5s;
 }
 
 .sideBar a {
   text-decoration: none;
   color: white;
   height: 75px;
+  transition-duration: 0.5s;
+
 }
+.sideBar a:hover {
+  text-decoration: none;
+  transition-duration: 0.5s;
+  color: green;
+  height: 75px;
+  font-size: 2.25vh;
+}
+.sideBar #settings-sidebar-icon
+{
+  transition: transform .7s ease-in;
+}
+
+.sideBar #settings-sidebar-icon:hover
+{
+  color:green;
+  transform: rotate(360deg);
+}
+
 body
 {
   background-color: #282c34;
+  overflow: hidden; 
+}
 
+#save{
+  position: absolute;
+  left: 11vw;
+  top: 2vh;
+  background-color: white;
+  width: 5vw;
+  min-width: 5vw;
+  height: 3vh;
+  border-radius: 10%;
+  border: 2px solid black;
+  transition-duration: 0.5s;
+}
+#save:hover{
+  transition-duration: 0.5s;
+  background-color: rgb(105, 201, 116);
+}
+
+
+#settings
+{
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  z-index: 99;
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid green;
+  background-color: black;
+  text-align: center;
+  opacity: .5;
+  transition-duration: 0.5s;
+  border-radius: 5%;
+}
+#settings h1 {
+  color: white;
+}
+
+div h1
+{
+  transition-duration: 0.5s;
+  color:white;
+}
+div h1:hover
+{
+  transition-duration: 0.5s;
+  color:green;
+}
+
+#Homepage{
+  position: absolute;
+  left: 39.25vw;
+
+}
+#Homepage h1
+{
+  font-size: 4vw;
+  position: relative;
+  right: 15vw;
+}
+
+#Homepage p
+{
+  position: relative;
+  top: 25vh;
+  right: 17vw;
+  font-size: 2vw;
+  color: white;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+#Homepage p:hover
+{
+  transition-duration: 0.5s;
+  font-size: 2.5vw;
+  color: rgb(105, 201, 116);
 }
