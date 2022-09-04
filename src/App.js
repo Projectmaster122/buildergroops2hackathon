@@ -32,6 +32,11 @@ var themeAce;
 var modeAce;
 var exampleText;
 var fileType;
+var slider = document.getElementById("myRange");
+slider.value = localStorage.getItem("fontSize");
+console.log(slider.onchange = function() {
+    localStorage.setItem("fontSize", slider.value);
+});
 
 if(window.location.href.split("/")[3].toLowerCase() === "home")
 {
@@ -285,6 +290,7 @@ function onChange(newValue) {
     aceCurrentValue = newValue;
     console.log(newValue);
 }
+console.log(localStorage.getItem("fontSize"));
 function App() {
     
     return(<AceEditor
@@ -303,7 +309,7 @@ function App() {
         theme={localStorage.getItem("lasttheme")}
         onChange={onChange}
         value={exampleText}
-        fontSize = { 24 }
+        fontSize = { parseInt(localStorage.getItem("fontSize")) }
         showPrintMargin={true}
         showGutter={true}
         highlightActiveLine = {true}
