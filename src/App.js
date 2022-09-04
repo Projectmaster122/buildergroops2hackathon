@@ -51,7 +51,7 @@ if(window.location.href.split("/")[3].split("#")[0].toLowerCase() === "settings"
     document.getElementById("settings").style.visibility = "visible";
 }
  
-if(window.location.href.split("/")[3].split("#")[0].toLowerCase() === "settings" || window.location.href.split("/")[3].split("#")[0].toLowerCase() === "nitro")
+if(window.location.href.split("/")[3].split("#")[0].toLowerCase() === "settings" || window.location.href.split("/")[3].split("#")[0].toLowerCase() === "nitro"|| window.location.href.split("/")[3].split("#")[0].toLowerCase() === "home")
 {
     
     if(typeof window.location.href.split("-")[1] === 'undefined')
@@ -281,26 +281,10 @@ saveButton.onclick = function() {
 }
 
 
-
-const button = GetElementInsideContainer("settings", "dropbtn");
-
-button.onclick = function ()
-{
-    
-}
-
-
 function onChange(newValue) {
     aceCurrentValue = newValue;
     console.log(newValue);
 }
-function onLoad()
-{
-    
-}
-
-
-
 function App() {
     
     return(<AceEditor
@@ -317,7 +301,6 @@ function App() {
         mode={modeAce}
         name='editor'
         theme={localStorage.getItem("lasttheme")}
-        onLoad={onLoad}
         onChange={onChange}
         value={exampleText}
         fontSize = { 24 }
