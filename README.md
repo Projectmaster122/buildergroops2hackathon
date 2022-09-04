@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Nitro code editor.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nitro editor is a free and open-source online code-editor developed by Void#0897 and Fakie#6027; For the  [Builder Groop S2 Hackathon](https://hacks.buildergroop.com). 
 
-## Available Scripts
+Nitro editor uses [React.js](https://reactjs.org) as the JavaScript framework used to build the website, [React-Ace](https://www.npmjs.com/package/react-ace) as the implementation for the code editor, and [FileSaver.js](https://www.npmjs.com/package/file-saver) for saving your code files, and finally we have implemented [hop](https://hop.io) for Realtime deployment. 
 
-In the project directory, you can run:
+# Why Nitro-editor?
 
-### `npm start`
+- Nitro editor is very basic and easy to use, unlike some alternatives that are complicated to learn.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Nitro editor is fully online and requires no setup, plus can be accessed from anywhere *Requires no extensions for language support or themes*.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Nitro currently has support for 8+ programming languages and if updated due to ace it could have support 		             for 45+ programming languages without the need for any extensions. 
 
-### `npm test`
+- Again, due to ace editor; Nitro if updated can have support for 24+ themes to personalize your code editor to your liking.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Nitro is **almost** fully reactive meaning you can code on the go! (*almost* depending on device and orientation can be fixed in the future with updates)
 
-### `npm run build`
+# If I had more time I would add:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Multi-file support so you can edit multiple files at the same time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Realtime JavaScript console built into the site.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Improved settings menu, such as font size, highlight active line, show line numbers, tab size, snippets, auto complete, etc.
 
-### `npm run eject`
+# Where can I view the source code and or contact you?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Github](https://github.com/Projectmaster122/buildergroops2hackathon)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Discord: Void#0897, Fakie#6027.
