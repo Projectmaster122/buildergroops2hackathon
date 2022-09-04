@@ -59,7 +59,7 @@ if(window.location.href.split("/")[3].split("#")[0].toLowerCase() === "settings"
         console.log("Launching nitro");
         themeAce = 'dracula';
         localStorage.setItem("lasttheme", "dracula");
-        changeATags(themeAce);
+        changeATags("#Theme-" + themeAce);
     }
     else
     {
