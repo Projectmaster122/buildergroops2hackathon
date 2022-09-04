@@ -106,8 +106,8 @@ h1
 
 body
 {
+  height: 100vh;
   background-color: #282c34;
-
   overflow: hidden; 
 }
 
@@ -206,14 +206,14 @@ div h1:hover
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: green;
+  background-color: rgb(105, 201, 116);
   width: 16vw;
   transition-duration: 0.5s;
 }
 
 .dropdown {
   position: relative;
-  left: 20vw;
+  left: 14vw;
   display: inline-block;
 }
 
@@ -240,7 +240,7 @@ div h1:hover
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  color: green;
+  color: rgb(105, 201, 116);
   transition-duration: 0.5s;
   font-size: 1vw;
 }
@@ -263,14 +263,14 @@ div h1:hover
 
 
 .dropbtn-theme:hover, .dropbtn-theme:focus {
-  background-color: green;
+  background-color: rgb(105, 201, 116);
   width: 16vw;
   transition-duration: 0.5s;
 }
 
 .dropdown-theme {
-  position: relative;
-  right: 20vw;
+  position: absolute;
+  left: 5vw;
   display: inline-block;
 }
 
@@ -297,7 +297,7 @@ div h1:hover
 
 .dropdown-content-theme a:hover {
   background-color: #ddd;
-  color: green;
+  color: rgb(105, 201, 116);
   transition-duration: 0.5s;
   font-size: 1vw;
 }
@@ -321,7 +321,89 @@ div h1:hover
 }
 
 #reload:hover, #reload:focus {
-  background-color: green;
+  background-color: rgb(105, 201, 116);
   width: 16vw;
   transition-duration: 0.5s;
+}
+
+#tryNitro
+{
+  position: absolute;
+  top: 85vh;
+  left: 5vw;
+    
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  max-height: 7vh;
+  border: none;
+  cursor: pointer;
+  width: 15vw;
+  max-width: 16vw;
+  border-radius: 10vw;
+  transition-duration: 0.5s;
+  font-size: 1.5vw;
+}
+#tryNitro:hover, #tryNitro:focus {
+  background-color: rgb(105, 201, 116);
+  width: 16vw;
+  font-size: 1.75vw;
+  transition-duration: 0.5s;
+}
+
+#react-logo
+{
+  width: 2vw;  
+  height: 4vh;
+  min-width: 2vw;
+  min-height: 4vh;
+
+  position: relative;
+  top: 1vh;
+
+}
+/* from react example code */
+@media (prefers-reduced-motion: no-preference) {
+  #react-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#blue-glow {
+  color: #fff;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+#blue-glow:hover
+{
+  transition-duration: 0.5s;
+  text-shadow: 0 0 1vw blue;
+  font-size: 3vw;
+}
+#aboutUs p:hover span
+{
+  transition-duration: 0.5s;
+  text-shadow: 0 0 1vw blue;
+  font-size: 3vw;
+}
+#Homepage h1:hover span
+{
+  transition-duration: 0.5s;
+  text-shadow: 0 0 1vw blue;
+  font-size: 3.75vw;
+}
+#aboutUs p:hover a span
+{
+  transition-duration: 0.5s;
+  text-shadow: 0 0 1vw #61DAFB;
+  font-size: 3vw;
 }

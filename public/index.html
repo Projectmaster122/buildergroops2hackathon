@@ -33,19 +33,20 @@
     <div id="root">
 
     </div>
-    
     <div id="Homepage" style="visibility: hidden; width: 0; height: 0;">
       <h1>
-        Welcome to the Nitro Code Editor.
+        Welcome to the <span id="blue-glow">Nitro Code Editor.</span>
       </h1>
       <div id="aboutUs">
           <p>
-            Hello, and welcome to the Nitro Code Editor. </br>
-            Developed by Void and Fakie for the Builder Groop S2 Hackathon.
-            This website uses the <a href="https://reactjs.org" style="color:white;">React.js</a> framework, <a href="https://ace.c9.io" style="color:white;">React-Ace</a> for the code
-            Editing, and <a href="https://www.npmjs.com/package/file-saver" style="color:white;">FileSaver.js</a> for saving your code.
+            Hello, and welcome to the <span id="blue-glow">Nitro Code Editor.</span> </br>
+            Developed by <span id="devs" style="color:white">Void and Fakie</span> for the Builder Groop S2 Hackathon.
+            This website uses the <a onclick="window.open('https://reactjs.org')" style="color:white; cursor: pointer; text-decoration: underline;"><span>React.js</span></a> <img src="./logo192.png" id="react-logo"> framework, <a onclick="window.open('https://ace.c9.io')" style="color:white; cursor: pointer; text-decoration: underline;"><span>React-Ace</span></a> for the code
+            Editing, <a onclick="window.open('https://www.npmjs.com/package/file-saver')" style="color:white; cursor: pointer; text-decoration: underline;"><span>FileSaver.js</span></a> for saving your code, fourth and finally
+            <a onclick="window.open('https://hop.io')" style="color:white; cursor: pointer; text-decoration: underline;"><span>Hop</span></a> for Realtime deployment.
           </p>
       </div>
+      <button onclick="window.open('/nitro')" id="tryNitro">Try Nitro!</button>
     </div>
 
 

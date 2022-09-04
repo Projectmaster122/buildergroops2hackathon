@@ -17,10 +17,10 @@ import './App.css';
 import { hop } from "@onehop/client";
 import React from 'react';
 import 'ace-builds/src-noconflict/theme-eclipse'
+
 hop.init({
 	projectId: "project_NDk4NzkzMTA1MjU3NzYwMzI"
 });
-
 
 
 
@@ -32,7 +32,7 @@ var themeAce;
 var modeAce;
 var exampleText;
 var fileType;
-console.log(window.location.href.split("/")[3].toLowerCase() === "home");
+
 if(window.location.href.split("/")[3].toLowerCase() === "home")
 {
     console.log("Home page.");
@@ -44,14 +44,14 @@ if(window.location.href.split("/")[3].toLowerCase() === "home")
 
 else{document.getElementById("settings").style.visibility = "hidden"}
 
-
 if(window.location.href.split("/")[3].split("#")[0].toLowerCase() === "settings")
 {
     console.log("setting visible");
     document.getElementById("settings").style.visibility = "visible";
 }
- 
-if(window.location.href.split("/")[3].split("#")[0].toLowerCase() === "settings" || window.location.href.split("/")[3].split("#")[0].toLowerCase() === "nitro"|| window.location.href.split("/")[3].split("#")[0].toLowerCase() === "home")
+
+
+if(window.location.href.split("/")[3].split("#")[0].toLowerCase() === "settings" || window.location.href.split("/")[3].split("#")[0].toLowerCase() === "nitro")
 {
     
     if(typeof window.location.href.split("-")[1] === 'undefined')
